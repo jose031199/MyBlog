@@ -23,9 +23,10 @@
     text-align: center;
     width: 100%;
     height: 150px;
-    border-bottom: 1px solid #b2aaaa;
     border-top: 6px solid var(--green);
 }
+
+
 
 .center{
     display: flex;
@@ -35,8 +36,10 @@
     margin:0 auto;
 }
 
+
+
 .logo{
-    display: inline-flex;
+    display: flex;
     align-items: center;
     gap: 15px;
     font-size: 25px;
@@ -66,7 +69,7 @@
 }
 
 .menu ul{
-    display: inline-flex;
+    display: flex;
     gap: 18px;
 }
 .menu ul li{
@@ -89,13 +92,13 @@
 
 .slider{
     width: 100%;
-    background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);;
+    background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
     height: 350px;
     line-height: 90px;
     text-align: center;
 }
 
-.slider h1,p{
+.slider{
     color: white;
 }
 
@@ -127,9 +130,104 @@
     color: gold;
 }
 
+.section{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 5rem;
+}
+/*Articulos*/
+.content{
+    margin:0px 20px;
+    line-height:35px;
+    text-align: justify;
+    word-spacing:5px;
+    font-size:20px;
+    width: 70%;
+}
+
+.sidebar{
+    width: 25%;
+}
+
+.sidebar-item img{
+    margin-top: 5px;
+    height: 220px;
+    border-radius: 5px;
+}
+
+/*footer*/
+
+.footer{
+    text-align: center;
+    font-size: 15px;
+    background: linear-gradient(to right top, #051937, #004d7a, #008793, #00bf72, #a8eb12);
+    min-height:120px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 15px;
+}
+
+.social{
+    font-size: 30px;
+}
+
+.social a{
+    margin: 0 20px;
+}
+
 
 /*Blog*/
 
 .blog {
     height: 150px;
+}
+
+.blog h1{
+    padding-top: 30px;
+}
+ 
+
+@media(max-width:768px){
+    .center{
+        flex-direction: column;
+        justify-content: center;
+        gap: 10px;
+    }
+
+    .logo{
+        flex-direction: column;   
+    }
+
+    .menu{
+        font-size: 15px;
+    }
+    .menu ul{
+        flex-direction: column;
+    } 
+
+    .slider{
+        margin-top: 200px;
+        height: 100px;
+        line-height: 30px;
+    }
+
+    .slider h1{
+        font-size: 20px;
+    }
+    .btn-white{
+        padding: 5px 10px;
+    }
+
+    .section{
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sidebar{
+        width: 50%;
+    }
 }
